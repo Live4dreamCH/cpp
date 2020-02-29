@@ -50,7 +50,8 @@ int main()
     q.size();
 
     //priority_queue
-    priority_queue<int> pq;
+    priority_queue<int> pq;                         //默认大顶堆
+    priority_queue<int, vector<int>, less<int>> pq; //与上方等价
     pq.push(5);
     pq.pop();
     pq.top();
@@ -66,7 +67,7 @@ int main()
 
     set<int>::iterator jp = j.begin();
     jp != j.end();
-    jp++;        //only ++
+    jp++; //only ++
     // jp += 1;     +=error
     // jp = jp + 1; +error
 

@@ -1,27 +1,22 @@
 #include <iostream>
-#include <cmath>
+#include <queue>
 using namespace std;
 
 int main()
 {
-    long long a;
-    long long t = 2;
-    cin >> a;
-    cout << 1 << ' ';
-    while (a)
+    priority_queue<int, vector<int>, greater<int>> a;
+    int t;
+    for (int i = 0; i < 5; i++)
     {
-        if (a % t == 0)
-        {
-            a /= t;
-            cout << t << ' ';
-        }
-        else if(t<a)
-        {
-            t++;
-        }
-        else
-            break;
+        cin >> t;
+        a.push(t);
     }
+    for (int i = 0; i < 5; i++)
+    {
+        cout << a.top() << ' ';
+        a.pop();
+    }
+
     return 0;
 }
 

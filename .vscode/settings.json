@@ -67,6 +67,10 @@
         "cstring": "cpp",
         "queue": "cpp",
         "set": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "bitset": "cpp",
+        "unordered_set": "cpp",
+        "functional": "cpp",
+        "ratio": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }
