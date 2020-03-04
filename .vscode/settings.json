@@ -71,6 +71,9 @@
         "bitset": "cpp",
         "unordered_set": "cpp",
         "functional": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "chrono": "cpp",
+        "thread": "cpp",
+        "mutex": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }
