@@ -20,6 +20,7 @@ int main()
     size = a.size();
     a.push_back(4);
     a[3] = 4;
+    a.
 
     vector<int>::iterator p = a.begin();
     (*p == a[0]);

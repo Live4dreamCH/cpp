@@ -74,6 +74,27 @@
         "ratio": "cpp",
         "chrono": "cpp",
         "thread": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "condition_variable": "cpp",
+        "shared_mutex": "cpp",
+        "future": "cpp",
+        "regex": "c",
+        "forward_list": "cpp",
+        "cfenv": "cpp",
+        "charconv": "cpp",
+        "cinttypes": "cpp",
+        "codecvt": "cpp",
+        "complex": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cuchar": "cpp",
+        "iterator": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "iomanip": "cpp",
+        "scoped_allocator": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp",
+        "hugeint": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }

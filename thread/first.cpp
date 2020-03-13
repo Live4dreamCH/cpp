@@ -1,8 +1,8 @@
 #include <ctime>
 #include <iostream>
-#include <string>
+// #include <string>
 #include <thread>
-#include <unistd.h>
+// #include <unistd.h>
 // #include <vector>
 using namespace std;
 
@@ -42,15 +42,15 @@ int main()
 {
     // cout << "中文？" << endl;
     clock_t pri = clock();
-    thread *pool[20];
-    for (int i = 40; i < 51; i++)
+    thread *pool[40];
+    for (int i = 40; i < 76; i++)
     {
         // p[i] = -1;
         thread *t;
         t = new thread(cal, i, pri);
         pool[i - 40] = t;
         // sleep(0.01);
-        if (i == 50)
+        if (i == 75)
             t->join();
         cout << "进程号 " << pool[i - 40]->get_id() << " 已启动" << endl;
     }
