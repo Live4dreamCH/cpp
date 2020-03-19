@@ -1,9 +1,14 @@
 #include <iostream>
+#include <queue>
 #include <vector>
 using namespace std;
 
-vector<vector<int>> height, shortSlab;
-int n, m, t;
+class Wall
+{
+public:
+    int i, j, height;
+    bool operator>
+};
 
 int min(int a, int b, int c, int d)
 {
@@ -18,38 +23,22 @@ int min(int a, int b, int c, int d)
     return t;
 }
 
-int Short(int i, int j)
-{
-    if(0<i&&i<n-1&&0<j&&j<m-1)
-    {
-        
-    }
-    else
-    {
-        if(shortSlab[i][j]<t)
-    }
-}
-
 class Solution
 {
 public:
     int trapRainWater(vector<vector<int>> &heightMap)
     {
-        int rain = 0;
-        n = heightMap.size(), m = heightMap[0].size();
-        height = heightMap;
-        shortSlab = heightMap;
-        for (int i = 1; i < n - 1; i++)
+        priority_queue<int> walls;
+        int i, j, rain = 0, n = heightMap.size(), m = heightMap[0].size();
+        for (i = 0;; i = n - 1)
         {
-            for (int j = 1; j < m - 1; j++)
+            for (j = 0;; j = m - 1)
             {
-                t=
-                // t = min(heightMap[i - 1][j], heightMap[i + 1][j], heightMap[i][j - 1], heightMap[i][j + 1]) - heightMap[i][j];
             }
         }
-        return rain;
     }
 };
+
 int main()
 {
     return 0;
