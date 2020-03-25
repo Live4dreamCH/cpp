@@ -51,7 +51,10 @@ int main()
         pool[i - 40] = t;
         // sleep(0.01);
         if (i == 75)
+        {
             t->join();
+            break;
+        }
         cout << "进程号 " << pool[i - 40]->get_id() << " 已启动" << endl;
     }
     // for (int i = 40; i < 65; i++)

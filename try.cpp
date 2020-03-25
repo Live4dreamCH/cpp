@@ -16,7 +16,7 @@ int main()
         cout << a.top() << ' ';
         a.pop();
     }
-
+    cout << INT_MAX;
     return 0;
 }
 
