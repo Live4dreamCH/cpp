@@ -1,24 +1,33 @@
 /*
-有一个分数序列
-2/1，3/2，5/3，8/5，13/8
-从键盘输入一个数n，输出该序列前n项之和，保留两位小数。
+从键盘输入两个字符串，把后输入的字符串拼接到第一个字符串后，然后输出合并后的字符串。
+每个字符串长度不超过50个字符。字符串可能包含空格。
 */
 #include <stdio.h>
 
 int main()
 {
-    int num, den, i, n, t;
-    double sum=0;
-    scanf("%d", &n);
-    num = 1;
-    den = 1;
-    for (i = 0; i < n;i++)
+    char a[55], b[55], c[115];
+    int i=0, len_a=10086;
+    gets(a);
+    gets(b);
+    while(i<len_a)
     {
-        t = num;
-        num += den;
-        den = t;
-        sum += (float)num / den;
+        if(a[i]==0)
+        {
+            len_a = i;
+            break;
+        }
+        c[i] = a[i];
+        i++;
     }
-    printf("%.2f", sum);
+    i = 0;
+    while(b[i]!=0)
+    {
+        c[i + len_a] = b[i];
+        i++;
+    }
+    c[i + len_a] = 0;
+    // printf("%s", c);
+    puts(c);
     return 0;
 }
