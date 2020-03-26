@@ -2,12 +2,25 @@
 
 int main()
 {
-    char a[55], b[55];
-    gets(a);
-    gets(b);
-    printf("attract the ^^ in this sentence\n");
-    printf("$%s$", a);
-    printf("$%s$", b);
+    puts("attract the ^^ here");
+    char t;
+    t = getchar();
+    while(t!=EOF)
+    {
+        if(t=='\r')
+        {
+            printf("\\r");
+        }
+        else if(t=='\n')
+        {
+            printf("\\n");
+        }
+        else
+        {
+            putchar(t);
+        }
+        t = getchar();
+    }
     return 0;
 }
 
