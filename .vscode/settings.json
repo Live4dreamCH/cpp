@@ -95,6 +95,8 @@
         "scoped_allocator": "cpp",
         "typeindex": "cpp",
         "valarray": "cpp",
-        "hugeint": "cpp"
+        "hugeint": "cpp",
+        "H3-2.C": "cpp",
+        "windows.h": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }

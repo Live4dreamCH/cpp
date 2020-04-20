@@ -1,0 +1,24 @@
+Expr->Var ExprTail
+    ->id VarTail ExprTail
+    ->id ExprTail
+    ->id -Expr
+    ->id --Expr
+    ->id --Var ExprTail
+    ->id -- id VarTail ExprTail
+    ->id -- id (Expr) ExprTail
+    ->id -- id ((Expr1)ExprTail)
+    ->id -- id ((Var ExprTail)) ExprTail
+    ->id -- id ((id ExprTail)) ExprTail
+    ->id -- id ((id)) ExprTail
+    ->id -- id ((id))
+
+Declist->Decl Declist'
+Declist'-> ; Decl Declist'
+ScalarTypeList->ScalarType ScalarTypeList'
+ScalarTypeList'->, ScalarType ScalarTypeList'
+Idlist->id Idlist'
+Idlist'->, id Idlist'
+ScalarType->id Bound'
+Bound'->..Bound | id
+Sign-> + | - | \varepsilon
+Bound->Sign IntLiteral | id
