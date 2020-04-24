@@ -97,6 +97,7 @@
         "valarray": "cpp",
         "hugeint": "cpp",
         "H3-2.C": "cpp",
-        "windows.h": "c"
+        "windows.h": "c",
+        "stdbool.h": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }

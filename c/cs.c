@@ -1,21 +1,10 @@
-// #include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 
-void foo();
-
-int main()
+int main(void)
 {
-    foo();
-
+    int a;
+    a = 3;
+    int b = 5;
+    printf("%d", a + b);
     return 0;
-}
-
-void foo()
-{
-    int *p;
-
-    while (1)
-    {
-        p = (int *)malloc(100000 * sizeof(int));
-    }
 }
