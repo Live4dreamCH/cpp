@@ -99,6 +99,7 @@
         "H3-2.C": "cpp",
         "windows.h": "c",
         "stdbool.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "string.h": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }
